@@ -18,11 +18,11 @@ def distance(a, b):
 
 if distance("aa", "ab") != 1:
     raise Exception("incorrect distance")
-print(distance("aaaa", "abcd") == 3)
-
+if distance("aaaa", "abcd")!= 3:
+    raise Exception("incorrect distance")
 
 cl = HierarchicalClustering([
-    "aa","bba","cba","aac"
+    "aa","bca","cbb","aac"
     
    # "China's panda and Australia's koala are two animals that aren't predator, pandas eat bamboo and koala's eat eucalyptus leaves.They are both different from pythons because pythons are potentially dangerous.",
     #"Pandas in China only eat bamboo and Koalas in Australia eat exclusively eucalyptus leaves. They are both restricted to one food while pythons eat a variety of foods.", 
